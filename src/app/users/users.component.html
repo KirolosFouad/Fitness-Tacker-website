@@ -1,0 +1,49 @@
+<body>
+    <div class="form-container">
+      <h2>Gym Membership Form</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+  
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+  
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="10" max="100" required />
+        </div>
+  
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" rows="3" required></textarea>
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required/>
+        </div>
+  
+        <div class="form-group">
+          <label for="goal">Fitness Goal:</label>
+          <select id="goal" name="goal" required>
+            <option value="">Select Goal</option>
+            <option value="Lose Weight">Lose Weight</option>
+            <option value="Build Muscle">Build Muscle</option>
+            <option value="Improve Stamina">Improve Stamina</option>
+            <option value="Stay Fit">Stay Fit</option>
+          </select>
+        </div>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>

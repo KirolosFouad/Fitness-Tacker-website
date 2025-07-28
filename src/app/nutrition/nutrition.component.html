@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Nutritional advice</h1>
+    <div class="card mb-3" style="max-width: 800px;" *ngFor="let Nutri of Nutritional">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img [src]="Nutri.img" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ Nutri.title }}</h5>
+              <p class="card-text">{{ Nutri.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

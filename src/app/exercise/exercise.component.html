@@ -1,0 +1,57 @@
+<div class="container">
+
+<!-- strength -->
+<div>
+    <h1>Strength Training</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let Exc of strength">
+          <div class="card h-100">
+            <img [src]="Exc.img" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{Exc.head}}</h5>
+              <p class="card-text">{{Exc.parg}}</p>
+              <a href="{{Exc.href}}" class="btn btn-primary" target="_blank">{{Exc.btn}}</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<!--cardo -->
+
+<div>
+    <h1>Cardo</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let caro of cardo">
+          <div class="card h-100">
+            <img [src]="caro.img" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{caro.head}}</h5>
+              <p class="card-text">{{caro.parg}}</p>
+              <a href="{{caro.href}}" class="btn btn-primary" target="_blank">{{caro.btn}}</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Flexibility exercises -->
+
+<div>
+    <h1>Flexibility exercises</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let flex of Flexibility">
+          <div class="card h-100">
+            <img [src]="flex.img" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{flex.head}}</h5>
+              <p class="card-text">{{flex.parg}}</p>
+              <a href="{{flex.href}}" class="btn btn-primary" target="_blank">{{flex.btn}}</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</div>
