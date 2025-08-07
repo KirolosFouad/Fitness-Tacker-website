@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fcf2f2;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgb(14, 5, 5);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #65e67d;
+}
+.tip {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s;
+}
+.tip:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.tip h2 {
+    color: #333;
+    margin: 0 0 10px;
+}
+.tip p {
+    color: #555;
+    line-height: 1.6;
+}
+.tip img {
+    max-width: 100%;
+    border-radius: 5px;
+}

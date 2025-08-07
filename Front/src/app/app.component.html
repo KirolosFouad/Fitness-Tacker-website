@@ -1,0 +1,29 @@
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" routerLink="">
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/10_Aim_logo_logos-512.png" alt="Bootstrap" width="30" height="24"><h1>Fitness</h1>
+        </a>
+        <ul class="nav nav-underline position-relative">
+            <li class="nav-item">
+              <a class="nav-link active h1 fw-bolder" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" routerLink="nutritions">Nutrition</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" routerLink="exercises">Exercise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" routerLink="users">Athletes</a>
+            </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+  </nav>
+
+
+ 
+  <router-outlet></router-outlet>

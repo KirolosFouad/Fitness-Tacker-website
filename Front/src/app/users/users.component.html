@@ -1,0 +1,55 @@
+<body>
+    <div class="form-container">
+      <h2>Gym Membership Form</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name" >Full Name:</label>
+          <input type="text" id="name" name="name" required [(ngModel)]= "Users.fullName"/>
+          <!-- <p>{{Users.fullName}}</p> -->
+        </div>
+  
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required [(ngModel)]= "Users.gender">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+          <!-- <p>{{Users.gender}}</p> -->
+        </div>
+  
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="10" max="100" required [(ngModel)]= "Users.age"/>
+        <!-- <p>{{Users.age}}</p>  --> 
+        </div>
+  
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" rows="3" required [(ngModel)]= "Users.address"></textarea>
+          <!-- <p>{{Users.address}}</p> -->   
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required [(ngModel)]= "Users.email"/>
+          <!-- <p>{{Users.email}}</p> --> 
+        </div>
+  
+        <div class="form-group">
+          <label for="goal">Fitness Goal:</label>
+          <select id="goal" name="goal" required [(ngModel)]= "Users.fitnessGoal">
+            <option value="">Select Goal</option>
+            <option value="Lose Weight">Lose Weight</option>
+            <option value="Build Muscle">Build Muscle</option>
+            <option value="Improve Stamina">Improve Stamina</option>
+            <option value="Stay Fit">Stay Fit</option>
+          </select>
+          <!-- <p>{{Users.fitnessGoal}}</p> --> 
+        </div>
+  
+        <button type="submit" (click)="onsubmit()">Submit</button>
+      </form>
+    </div>
+  </body>
